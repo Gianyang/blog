@@ -1,0 +1,10 @@
+<div class="container">
+  <CAPTION><EM><h1>Tags</h1></EM></CAPTION>
+  <% @tags.each do |elem| %>
+    <%= "<a href = /#{elem.id}>" %>
+      <p>
+       <%= elem.name %>
+      </p>
+    </a>
+  <% end %>
+</div>
